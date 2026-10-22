@@ -3,102 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continuity of Life - Quizzes</title>
+    <title>Continuity of Life - Quiz Selection</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
+            font-family: 'Inter', sans-serif;
             background-color: #ffffff;
-            color: #333333;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2rem;
-            color: #1a252f;
-            margin-bottom: 10px;
-        }
-
-        p.subtitle {
-            font-size: 1rem;
-            color: #666666;
-            margin-bottom: 30px;
-        }
-
-        .quiz-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
-        }
-
-        .quiz-strip {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #27ae60;
-            color: #ffffff;
-            padding: 16px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            transition: background-color 0.2s ease, transform 0.1s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .quiz-strip:hover {
-            background-color: #219150;
-            transform: translateY(-2px);
-        }
-
-        .quiz-strip:active {
-            transform: translateY(0);
-        }
-
-        .arrow {
-            font-size: 1.2rem;
         }
     </style>
 </head>
-<body>
+<body class="bg-white text-slate-800 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
 
-    <div class="container">
-        <h1>Continuity of Life</h1>
-        <p class="subtitle">Select a Quiz to Start</p>
-
-        <div class="quiz-list">
-            <a href="Continuity of Life - Lesson 14 Quiz 01.html" class="quiz-strip">
-                <span>Lesson 14 - Quiz 01</span>
-                <span class="arrow">&rarr;</span>
-            </a>
-
-            <a href="Continuity of Life - Lesson 14 Quiz 02.html" class="quiz-strip">
-                <span>Lesson 14 - Quiz 02</span>
-                <span class="arrow">&rarr;</span>
-            </a>
-
-            <a href="Continuity of Life - Lesson 14 Quiz 03.html" class="quiz-strip">
-                <span>Lesson 14 - Quiz 03</span>
-                <span class="arrow">&rarr;</span>
-            </a>
+    <!-- Container -->
+    <div class="w-full max-w-xl mx-auto flex flex-col items-center text-center">
+        
+        <!-- Top Main Title -->
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">
+            Continuity of Life
+        </h1>
+        
+        <!-- Science Class Logo / Image Header -->
+        <div class="mb-6 flex justify-center items-center">
+            <!-- SVG Illustration representing Science Class / Teacher Logo -->
+            <svg class="w-48 sm:w-56 h-auto" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Teacher outline figure -->
+                <path d="M160 30 C172 30 182 40 182 52 C182 64 172 74 160 74 C148 74 138 64 138 52 C138 40 148 30 160 30 Z" fill="#1e293b"/>
+                <!-- Glasses -->
+                <circle cx="152" cy="50" r="5" stroke="#ffffff" stroke-width="2" fill="none"/>
+                <circle cx="168" cy="50" r="5" stroke="#ffffff" stroke-width="2" fill="none"/>
+                <line x1="157" y1="50" x2="163" y2="50" stroke="#ffffff" stroke-width="2"/>
+                <!-- Hair & Beard -->
+                <path d="M142 42 C145 32 175 32 178 42 C182 45 180 58 176 62 C170 68 150 68 144 62 C140 58 138 45 142 42 Z" fill="#0f172a" opacity="0.9"/>
+                <!-- Shirt / Jacket -->
+                <path d="M125 120 C125 85 140 80 160 80 C180 80 195 85 195 120 L205 125 L115 125 Z" fill="#334155"/>
+                <!-- Plaid / Checkered Pattern lines -->
+                <path d="M130 90 L190 90 M130 102 L190 102 M130 114 L190 114 M145 80 L145 125 M160 80 L160 125 M175 80 L175 125" stroke="#ffffff" stroke-width="1.2" opacity="0.4"/>
+                
+                <!-- Sinhala / English Logo Text Styling -->
+                <!-- 'චරිත හදන' Text -->
+                <text x="75" y="142" font-family="'Inter', sans-serif" font-weight="700" font-size="16" fill="#0f172a">චරිත හදන</text>
+                
+                <!-- 'science' Stylized Text in Red -->
+                <text x="122" y="168" font-family="'Inter', cursive, sans-serif" font-weight="900" font-style="italic" font-size="30" fill="#dc2626">science</text>
+                
+                <!-- 'පන්තිය' Text -->
+                <text x="225" y="162" font-family="'Inter', sans-serif" font-weight="700" font-size="16" fill="#0f172a">පන්තිය</text>
+            </svg>
         </div>
+
+        <!-- Lesson Subtitle -->
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mb-8 tracking-tight">
+            Reproduction & Vegetative Propagation
+        </h2>
+
+        <!-- Quizzes Stacked List -->
+        <div class="flex flex-col gap-6 w-full max-w-md">
+            
+            <!-- Quiz 1 Card -->
+            <div class="w-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col items-center">
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Quiz 1</h3>
+                <p class="text-slate-800 font-semibold text-base mb-4">Ready to start?</p>
+                <a href="Continuity of Life - Lesson 14 Quiz 01.html" 
+                   class="bg-[#27ae60] hover:bg-[#219150] active:scale-95 text-white font-bold text-base py-2.5 px-6 rounded-lg transition-all duration-200 shadow-sm inline-block">
+                    Attend the quiz
+                </a>
+            </div>
+
+            <!-- Quiz 2 Card -->
+            <div class="w-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col items-center">
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Quiz 2</h3>
+                <p class="text-slate-800 font-semibold text-base mb-4">Ready to start?</p>
+                <a href="Continuity of Life - Lesson 14 Quiz 02.html" 
+                   class="bg-[#27ae60] hover:bg-[#219150] active:scale-95 text-white font-bold text-base py-2.5 px-6 rounded-lg transition-all duration-200 shadow-sm inline-block">
+                    Attend the quiz
+                </a>
+            </div>
+
+            <!-- Quiz 3 Card -->
+            <div class="w-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col items-center">
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Quiz 3</h3>
+                <p class="text-slate-800 font-semibold text-base mb-4">Ready to start?</p>
+                <a href="Continuity of Life - Lesson 14 Quiz 03.html" 
+                   class="bg-[#27ae60] hover:bg-[#219150] active:scale-95 text-white font-bold text-base py-2.5 px-6 rounded-lg transition-all duration-200 shadow-sm inline-block">
+                    Attend the quiz
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-slate-400 text-xs font-medium">
+            Continuity of Life &bull; Science Class Quiz Portal
+        </footer>
+
     </div>
 
 </body>
